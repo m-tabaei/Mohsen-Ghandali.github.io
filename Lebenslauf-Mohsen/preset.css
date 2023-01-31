@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Kdam Thmor Pro";
+    src: url(./fonts/KdamThmorPro-Regular.ttf);
+  }
+  
+  body {
+    background-color: black;
+    overflow-x: hidden;
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    }
+  

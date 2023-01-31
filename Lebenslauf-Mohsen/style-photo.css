@@ -1,0 +1,87 @@
+@import './preset.css';
+@import './navbar.css';
+@import './footer.css';
+
+
+h1 {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 40px;
+  margin-bottom: 15px;
+  color: #c0c0c0;
+  font-family: "Kdam Thmor Pro", "sans-serif";
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 65px;
+}
+
+.content-0 {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pic-left {
+  width: 350px;
+  height: 708px;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.content-1 {
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+.pic-2 {
+  margin-bottom: 8px;
+  display: flex;
+  width: 350px;
+  height: 171px;
+}
+
+.content-2 {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.pic-3-4 {
+  width: 171px;
+  height: 171px;
+  display: flex;
+}
+
+.pic-5 {
+  width: 350px;
+  height: 350px;
+  display: flex;
+}
+
+.content-3 {
+  display: grid;
+  justify-content: center;
+ 
+}
+
+.pic-right {
+  margin-bottom: 8px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+}
+
+.image {
+  border-radius: 8px;
+}
+
+.image:hover {
+  transform: rotate(1deg);
+  transition: 0.3s;
+}
