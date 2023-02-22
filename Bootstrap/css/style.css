@@ -1,0 +1,443 @@
+/* ----------Start Mobile first 320px----------*/
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif !important;
+}
+header {
+  height: 64px;
+  border: #adb5bd 2px solid;
+}
+.brand {
+  font-family: Helvetica, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: #032b43 !important;
+  position: absolute;
+  top: 19px;
+  right: 35%;
+}
+.join {
+  font-family: Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  color: #d00000 !important;
+  overflow-y: hidden !important;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: all 300ms linear !important;
+}
+.join:hover {
+  color: #fff !important;
+  background-color: #032b43 !important;
+}
+header ul {
+  position: relative;
+  z-index: 999;
+}
+header ul > li > a {
+  font-size: 12px !important;
+  border-bottom: #136f63 1px solid;
+  border-bottom-left-radius: 50% !important;
+}
+header ul > li > a:hover {
+  color: #000000 !important;
+  transition: all 300ms linear !important;
+}
+.frm {
+  position: absolute;
+  background-color: #136f63;
+  top: 63px;
+  left: -1px;
+}
+.src {
+  background-color: #ffba08 !important;
+  transition: all 300ms linear !important;
+}
+.src:hover {
+  background-color: rgba(255, 186, 8, 75%) !important
+;
+}
+main {
+  margin-top: 210px;
+}
+main > .place > :nth-child(1) > p {
+  font-size: 26px;
+}
+.owl-nav > :nth-child(1) {
+  background-color: #fff !important;
+  box-shadow: #000 0px 0px 2px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -12px;
+}
+.owl-nav > :nth-child(2) {
+  background-color: #fff !important;
+  box-shadow: #000 0px 0px 2px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+}
+.owl-dots {
+  display: none;
+}
+main > .place > .owl-carousel > div .img-xl {
+  display: none !important;
+}
+main > .services > div > div > img {
+  width: 96px;
+  height: 96px;
+  cursor: pointer;
+}
+main > .services > p {
+  font-size: 26px;
+}
+main > .services > div > div > p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+main > .team > :nth-child(1) > p {
+  font-size: 26px;
+}
+main > .team > .person {
+  background-color: #f8f9fa;
+}
+main > .team > .person > .txt > :nth-of-type(1) {
+  font-size: 14px !important;
+  color: #032b43;
+}
+main > .team > .person > .txt > :nth-of-type(2) {
+  font-size: 13px !important;
+  color: #d00000;
+}
+main > .team > .person > .txt > :nth-of-type(3) {
+  font-size: 13px !important;
+  color: #d00000;
+  text-align: justify;
+}
+main > .team > .person > .txt > a > img {
+  width: 18px;
+  height: 18px;
+}
+main > .projects > :nth-child(1) > p {
+  font-size: 26px !important;
+}
+main > .projects .dsg-img > img {
+  width: 35px !important;
+  height: 35px !important;
+}
+main > .projects .dsg-img > a > p {
+  font-size: 13px !important;
+  line-height: 15px;
+}
+main > .contact > form {
+  height: 467px;
+}
+main > .contact > form button {
+  background-color: #ffba08;
+  color: #000;
+  transition: all 300ms linear;
+}
+main > .contact > form button:hover {
+  background-color: rgba(255, 186, 8, 75%) !important;
+  color: #000;
+}
+main > .contact > :nth-child(3) {
+  background-color: #032b43;
+  color: #fff;
+}
+main > .contact > :nth-child(3) > :nth-child(1) > p {
+  font-size: 22px;
+  color: #ffba08;
+}
+main > .contact > :nth-child(3) .ct-img {
+  width: 32px !important;
+  height: 32px !important;
+}
+main > .contact > :nth-child(3) iframe {
+  height: 250px !important;
+}
+main > .contact > :nth-child(3) > .ct-icon > img {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #136f63;
+  color: #fff;
+  height: 50px;
+  line-height: 50px !important;
+}
+footer > p {
+  font-size: 13px;
+  line-height: 17px;
+  padding: 7px;
+  color: #ffba08;
+}
+footer > p > span {
+  font-size: 16px;
+  color: #fff;
+}
+/* ----------Start Query from 419px-iPhone 13 Pro Max---------- */
+@media screen and (min-width: 419px) {
+  .brand {
+    right: 41%;
+  }
+  main {
+    margin-top: 220px;
+  }
+  main > .services > div > div > img {
+    width: 130px;
+    height: 130px;
+  }
+  main > .team > .person > .txt > :nth-of-type(1) {
+    font-size: 17px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(2) {
+    font-size: 14px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(3) {
+    font-size: 13px !important;
+  }
+  main > .team > .person > .txt > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  main > .projects .dsg-img > img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  main > .contact > :nth-child(3) .ct-icon {
+    margin-top: -48px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    border: hidden !important;
+  }
+  .brand {
+    left: -31%;
+    top: 14px;
+    font-size: 26px !important;
+  }
+  .join {
+    top: 5px;
+  }
+  .frm {
+    display: block;
+    height: 50px !important;
+    margin-top: -17px !important;
+    position: absolute;
+    top: 23px;
+    left: 27%;
+    background-color: transparent;
+  }
+  .src {
+    background-color: #032b43 !important;
+    border-radius: 0 !important;
+  }
+  .src:hover {
+    background-color: #136f63 !important
+    ;
+  }
+  .inp {
+    border-radius: 0 !important;
+  }
+  .menu {
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    background-color: #136f63 !important;
+    width: 400% !important;
+    margin-left: -12px !important;
+  }
+  .menu > ul {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #136f63 !important;
+    font-weight: 500 !important;
+  }
+  .menu > ul > li {
+    margin: 0 !important;
+  }
+  .menu > ul > li > a {
+    border: none;
+    color: #fff;
+    font-size: 16px !important;
+  }
+  .menu > ul > li > a :hover {
+    color: #000;
+  }
+  main {
+    margin-top: 79px;
+  }
+  main > .place > :nth-child(1) > p {
+    text-align: center;
+  }
+  main > .services > div > div > img {
+    width: 177px;
+    height: 177px;
+  }
+  main > .team > .person > .txt > :nth-of-type(1) {
+    font-size: 22px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(2) {
+    font-size: 18px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(3) {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+  main > .txt > .person > .txt > a > img {
+    width: 28px;
+    height: 28px;
+  }
+  main > .contact > :nth-child(1) > p {
+    font-size: 26px;
+  }
+  main > .contact > form input,
+  main > .contact > form textarea {
+    background-color: #f8f9fa;
+    resize: none;
+  }
+  main > .contact > :nth-child(3) .ct-icon {
+    margin-top: 25px !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .brand {
+    left: -37%;
+  }
+  main > .place > .owl-carousel > div .img-sm {
+    display: none !important;
+  }
+  main > .place > .owl-carousel > div .img-xl {
+    display: inline-block !important;
+  }
+  .src {
+    width: 80px !important;
+  }
+  main > .services > div {
+    gap: 32px !important;
+  }
+  main > .services > div > div > img {
+    width: 212px;
+    height: 212px;
+  }
+  main > .services > div > div > p {
+    font-size: 20px;
+  }
+  main > .team > .person > .txt > :nth-of-type(1) {
+    font-size: 24px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(2) {
+    font-size: 20px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(3) {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  main > .team > .person > .txt > a > img {
+    width: 32px;
+    height: 32px;
+  }
+  main > .projects .dsg-img > img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+  main > .projects .dsg-img > a > p {
+    font-size: 20px !important;
+    line-height: 24px;
+  }
+
+  main > .contact > :nth-child(3) .ct-icon {
+    margin-top: 15px !important;
+  }
+  main > .contact .ct-row1 {
+    width: 48.49%;
+    height: 475px;
+    margin-top: auto !important;
+    position: relative;
+    top: -35px;
+  }
+  main > .contact .ct-row2 {
+    width: 48.49%;
+    height: 475px;
+  }
+  footer {
+    height: 108px;
+  }
+  footer > p {
+    font-size: 16px;
+    line-height: 30px !important;
+    padding: 22px;
+  }
+  footer > p > span {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .brand {
+    top: 11px;
+    left: -38.5%;
+    font-size: 30px !important;
+  }
+  .menu {
+    display: block !important;
+  }
+  main > .services > div > div > img {
+    width: 228px;
+    height: 228px;
+  }
+  main > .services > div {
+    gap: 82px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(3) {
+    line-height: 32px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .brand {
+    left: -41.5%;
+  }
+  main > .services > div > div > img {
+    width: 258px;
+    height: 258px;
+  }
+  main > .services > div {
+    gap: 107px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .brand {
+    left: -44.5%;
+    top: 7px;
+    font-size: 36px !important;
+  }
+  .join {
+    right: 24px;
+  }
+  main > .services > div {
+    gap: 64px !important;
+  }
+  main > .team > .person > .txt > :nth-of-type(1) {
+    font-size: 26px !important;
+  }
+  main > .contact .ct-row1 {
+    width: 49.2%;
+  }
+  main > .contact .ct-row2 {
+    width: 49.2%;
+  }
+}
