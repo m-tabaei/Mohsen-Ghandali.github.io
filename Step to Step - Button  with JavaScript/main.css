@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.container{
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+ 
+}
+
+div.container>div.circles{
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.container>div.circles>div.circle{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color:antiquewhite ;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 4px solid transparent;
+}
+
+div.container>div.circles>div.circle.active{
+  border-color: red;
+}
+
+div.container>div.progress{
+  width: 100%;
+  height: 5px;
+  background-color: chocolate;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+div.container>div.progress>div.progress-bar{
+  width: 0;
+height: 100%;
+background-color: red;
+}
+
+div.buttons{
+  text-align: center;
+}
+
+div.buttons>button{
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+

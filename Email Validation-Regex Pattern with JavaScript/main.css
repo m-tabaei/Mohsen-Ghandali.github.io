@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  background-color: burlywood;
+  width: 500px;
+  height: 100px;
+  margin:50px auto ;
+line-height: 100px;
+text-align: center;
+border-radius: 8px;
+}
+
+section>input{
+  height: 30px;
+  border: none;
+  border-radius:4px;
+}
+section>button{
+  height: 30px;
+  border: none;
+  border-radius:4px;
+  padding:0 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: gray;
+  color: #ffffff;
+  transition:300ms all linear ;
+}
+
+section>button:hover{
+  background-color: aqua;
+  color: #1b1b1b;
+}

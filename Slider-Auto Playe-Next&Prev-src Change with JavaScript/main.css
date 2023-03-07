@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.thumbnail {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.thumbnail > div.main {
+  width: 50%;
+  height: 50vh;
+
+  margin-top: 50px;
+}
+
+div.thumbnail > div.main > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.thumbnail > div.cross {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+div.thumbnail > div.cross > div.item {
+  width: 20%;
+}
+
+div.thumbnail > div.cross > div.item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+div.thumbnail > div.buttons {
+  margin-top: 32px;
+}
+div.thumbnail > div.buttons > button {
+  cursor: pointer;
+  padding: 4px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: inset #000 0 0 16px;
+  border: none;
+}
+
+div.thumbnail > div.buttons > button:disabled {
+  cursor: not-allowed;
+}

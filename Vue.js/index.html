@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/style.css" />
+    <script src="./lib/js/vue.min.js"></script>
+    <script src="./lib/js/vue.js"></script>
+    <title>To-Do-App</title>
+  </head>
+  <body>
+    <div id="aufgabenApp">
+      <h1>To-Do-Liste</h1>
+
+      <p class="frm">
+        <label for="neueAufgabe">Neue Aufgaben</label>
+        <input type="text" id="neueAufgabe" v-model="neueAufgabe" />
+        <button class="hinzu" @click="aufgabeHinzu">hinzufügen</button>
+      </p>
+
+      <h2>Alle Aufgaben</h2>
+      <ul>
+        <li
+          v-for="(aufgabe, index) in aufgaben"
+          :class="{'allerErledigten': aufgabe.fertig}"
+        >
+          <p>{{aufgabe.beschreibung}}</p>
+          <button class="erledigtWechseln" @click="erledigtWechseln(index)">
+            ✓
+          </button>
+          <button class="loeschen"  @click="loeschen(index)">✖</button>
+        </li>
+      </ul>
+
+      <h2>Aller nicht erledigten:</h2>
+      <ul>
+        <li v-for="aufgabe in nichterledigt">{{aufgabe.beschreibung}}</li>
+      </ul>
+
+      <h2>Aller erledigten:</h2>
+      <ul>
+        <li v-for="aufgabe in erledigt">{{aufgabe.beschreibung}}</li>
+      </ul>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#aufgabenApp",
+        data: {
+          aufgaben: [
+            { beschreibung: "HTML-Projekt", fertig: true },
+            { beschreibung: "CSS-Projekt", fertig: false },
+            { beschreibung: "JavaScript-Projekt", fertig: false },
+            { beschreibung: "Vue.js-Projekt", fertig: false },
+            { beschreibung: "React.js-Projekt", fertig: false },
+            { beschreibung: "Angular-Projekt", fertig: false },
+          ],
+          neueAufgabe: "",
+        },
+        computed: {
+          erledigt() {
+            return this.aufgaben.filter((aufgabe) => aufgabe.fertig);
+          },
+          nichterledigt() {
+            return this.aufgaben.filter((aufgabe) => !aufgabe.fertig);
+          },
+        },
+        methods: {
+          aufgabeHinzu() {
+            this.aufgaben.push({
+              beschreibung: this.neueAufgabe,
+              fertig: false,
+            });
+            this.neueAufgabe = "";
+          },
+          erledigtWechseln(index) {
+            this.aufgaben[index].fertig = !this.aufgaben[index].fertig;
+          },
+          loeschen(index) {
+            this.aufgaben.splice(index, 1);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
