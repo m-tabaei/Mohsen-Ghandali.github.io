@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+
+h2{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+p{
+    margin: 0 auto;
+    text-align: center;
+}
+button,input{
+display: flex;
+margin: 10px auto;
+padding: 4px;
+}
